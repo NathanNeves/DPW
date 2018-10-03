@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="folha.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Oswald|Roboto+Condensed" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
+<link rel="shortcut icon" type="image/png" href="img/lionicon.png"/>
+<title>Leões</title>
+</head>
+<body>
+  <nav id="menu" class="menudiv">
+    <a href="javascript:void(0)" class="closebtt" onclick="closemenu()">&times;</a>
+    <a href="index.html" class="link">Início</a>
+    <a href="Pesquisa.html" class="link">Pesquisa</a>
+    <a href="Curiosidades.html" class="link">Curiosidades</a>
+    <a href="Cultura.html" class="link">Cultura</a>
+    <a href="Quiz.html" class="link">Quiz</a>
+  </nav>
+  <section class="corpo" id="body">
+  <span onclick="openmenu()" class="menuicon">&#9776;</span>
+  <h2 class="headertext rellax" data-rellax-speed="-8">Leões</h2>
+  <h4 class="headersupportext rellax" data-rellax-speed="-3">Saiba mais informações sobre esses incriveis animais</h4>
+  </section>
+
+<!--scripts-->
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="js/rellax.js"></script>
+<script src="js/menu.js"></script>
+<script>
+var relax = new Rellax('.rellax');
+ScrollReveal().reveal('.headertext',{delay:300});
+ScrollReveal().reveal('.headersupportext', {delay:600});
+</script>
+</body>
+</html>
